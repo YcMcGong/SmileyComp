@@ -34,10 +34,16 @@ libraries:
   version: "latest"
 - name: flask
   version: "0.12"
+- name: ssl
+  version: latest
+- name: PIL
+  version: latest
+skip_files:
+    - sitepackages/PIL*
 
 # [START env_variables]
 env_variables:
-    CLOUDSQL_CONNECTION_NAME: yicongwebdev:us-east1:yicongwebdevdb
+    CLOUDSQL_CONNECTION_NAME: thesmileycom:us-east1:yicongwebdevdb
     CLOUDSQL_USER: root
     CLOUDSQL_PASSWORD: 26612106
 # [END env_variables]

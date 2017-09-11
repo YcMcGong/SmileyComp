@@ -26,9 +26,11 @@ import MySQLdb
 # CLOUDSQL_USER = os.environ.get('CLOUDSQL_USER')
 # CLOUDSQL_PASSWORD = os.environ.get('CLOUDSQL_PASSWORD')
 
-CLOUDSQL_CONNECTION_NAME =  'yicongwebdev:us-east1:yicongwebdevdb'
+CLOUDSQL_CONNECTION_NAME =  'thesmileycom:us-east1:yicongwebdevdb'
 CLOUDSQL_USER = 'root'
 CLOUDSQL_PASSWORD = '26612106'
+
+PROJECT_ID = 'thesmileycom'
 
 def connect_to_cloudsql():
 
@@ -56,3 +58,7 @@ def connect_to_cloudsql():
             host='127.0.0.1', user=CLOUDSQL_USER, passwd=CLOUDSQL_PASSWORD)
 
     return db
+
+CLOUD_STORAGE_BUCKET = 'thesmileycom.appspot.com'
+MAX_CONTENT_LENGTH = 8 * 1024 * 1024
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
